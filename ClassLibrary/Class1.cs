@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace TestingAssignment
+namespace ClassLibrary
 {
     class Program
     {
@@ -37,7 +37,7 @@ namespace TestingAssignment
                 }
                 else if (gender == "male")
                 {
-                    if((age >= 18) && (age <=35))
+                    if ((age >= 18) && (age <= 35))
                     {
                         premium = 6.0;
                     }
@@ -61,9 +61,6 @@ namespace TestingAssignment
                 return premium;
             }
         }
-        
+
     }
 }
-
-          
-
