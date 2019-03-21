@@ -10,11 +10,13 @@ namespace TestingAssignment
     {
         static void Main(string[] args)
         {
-
+            double premium = InsuranceService.CalcPremium(25, "female");
+            Console.WriteLine(premium);
+            Console.ReadKey();
         }
-        class InsuranceService
+        public class InsuranceService
         {
-            public double CalcPremium(int age, string gender)
+            public static double CalcPremium(int age, string gender)
             {
                 double premium;
                 if (gender == "female")
@@ -56,8 +58,6 @@ namespace TestingAssignment
                     premium = premium * 0.15;
                 }
                 return premium;
-            
-             
             }
         }
     }
